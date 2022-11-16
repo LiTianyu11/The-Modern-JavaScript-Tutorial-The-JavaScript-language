@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //https://zh.javascript.info/comparison
+
+      //⭐字符串的比较
+      console.log("Z" > "A"); // true
+      console.log("Glow" > "Glee"); //true
+      console.log("Bee" > "Be"); // true
+      //详细比较算法 https://zh.javascript.info/comparison#zi-fu-chuan-bi-jiao
+
+      //⭐不同类型间的比较时，会首先将其转化为数字再判断
+      console.log("02" > 1); //true
+
+      //好玩但正常的现象
+      let a1 = 0;
+      console.log(Boolean(a1)); //false
+      let b1 = "0";
+      console.log(Boolean(b1)); //true
+      console.log(a1 == b1); //true
+
+      //⭐null和undefined
+      //null后在数字转化中变成0，undefined变成NaN
+      console.log(null == undefined); //true 两者进行==比较时有一套独立的机制
+      console.log(null === undefined); //false
+
+      //⭐奇怪的结果: null vs 0
+      console.log(null > 0); //false
+      console.log(null < 0); //false
+      console.log(null == 0); //false
+      console.log(null <= 0); //true
+      console.log(null >= 0); //true
+
+      //⭐特立独行的undefiend
+      console.log(undefined > 0); //false
+      console.log(undefined == 0); //false
+      console.log(undefined >= 0); //false
+    </script>
+  </body>
+</html>
