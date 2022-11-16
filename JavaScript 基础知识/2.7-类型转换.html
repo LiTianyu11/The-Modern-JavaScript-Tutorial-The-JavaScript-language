@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //https://zh.javascript.info/type-conversions
+
+      //⭐字符串转化
+      console.log(typeof true); //boolean
+      console.log(typeof String(true)); //string
+      console.log(String(NaN));
+
+      //⭐数字型转换
+      //Number(string): 🔶去掉首尾空白字符（空格、换行符 \n、制表符 \t 等）后的纯数字字符串中含有的数字。如果剩余字符串为空，则转换结果为 0。否则，将会从剩余字符串中“读取”数字。当类型转换出现 error 时返回 NaN。
+      console.log(Number("  \n \t 1234")); //1234
+      console.log(Number("  \n \t ")); //0
+      console.log(Number("  \n \t 1234 s")); //NaN(Not a Number)
+      console.log(Number(undefined)); //🔶 NaN
+      console.log(Number(null)); //🔶0
+      console.log(Number(true)); //1
+      console.log(Number(false)); //0
+
+      //⭐布尔型转化
+      //0, null, undefined, NaN, "" => false
+      //除了0, null, undefined, NaN, ""的其他值 => true
+
+      console.log(Boolean(0)); //false
+      console.log(Boolean(1)); //true
+      console.log(Boolean(" ")); //🔶 空格也会转化为 true
+      console.log(Boolean("false")); //false
+    </script>
+  </body>
+</html>
