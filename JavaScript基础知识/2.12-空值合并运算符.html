@@ -21,7 +21,7 @@
       console.log(height || 100); //100
       console.log(height ?? 100); //0
 
-      //⭐ 优先级
+      //⭐ 优先级，??的优先级非常低，使用请使用括号()
       let h1 = null;
       let w1 = null;
       let area1 = (h1 ?? 100) * (w1 ?? 50);
