@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //⭐ for...in 遍历对象属性
+      let forIn = {
+        key1: 1,
+        key2: 2,
+        key3: 3,
+      };
+
+      for (let key in forIn) {
+        console.log(key); // key1 key2 key3
+        console.log(forIn[key]); //1 2 3
+      }
+
+      //⭐ for...of 遍历可数组和可迭代对象
+
+      //⭐ do...while 使用很少，特点：至少会执行一次
+      let i = 0;
+      do {
+        console.log(i); //0
+        i++;
+      } while (i < 0);
+
+      //✅ 任务
+
+      //⭐ ++i/i++在循环中差异
+
+      let j = 0;
+      while (++j < 5) console.log(j); // 1 2 3 4 首先递增 i 然后返回新值
+
+      let k = 0;
+      while (k++ < 5) console.log(k); // 1 2 3 4 5 递增 i 然后返回旧值
+
+      for (let i = 0; i < 5; i++) console.log(i); // 0 到 4
+      for (let i = 0; i < 5; ++i) console.log(i); // 0 到 4
+
+      /*⭐ 重复输入，直到正确为止
+          编写一个提示用户输入大于 100 的数字的循环。如果用户输入其他数值 —— 请他重新输入。
+
+          循环一直在请求一个数字，直到用户输入了一个大于 100 的数字、取消输入或输入了一个空行为止。
+
+          在这我们假设用户只会输入数字。在本题目中，不需要对非数值输入进行特殊处理。
+            */
+      let num;
+
+      do {
+        num = prompt("Enter a number greater than 100?", 0);
+      } while (num <= 100 && num);
+
+
+      //⭐ 判断是否是素数
+        n = 10;
+        nextPrime: for (let i = 2; i <= n; i++) {
+          for (let j = 2; j < i; j++) {
+            if (i % j == 0) continue nextPrime;
+          }
+          console.log(i);
+        }
+
+    </script>
+  </body>
+</html>
