@@ -14,3 +14,4 @@
   &&(与)找假值，||找真值
 - [2.12-空值合并运算符](JavaScript基础知识/2.12-空值合并运算符.html)
 - [2.13-循环：while 和 for](JavaScript基础知识/2.13-循环：while%20和%20for.html) ++作为前后缀在 while 循环中的差异，以及素数判断程序
+- [2.14-switch 语句](/JavaScript基础知识/2.14-switch语句.html) case 1: case 2: 实现分组
