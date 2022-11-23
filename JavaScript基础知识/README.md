@@ -12,4 +12,4 @@
 - [2.13-循环：while 和 for](2.13-循环：while%20和%20for.html) ++作为前后缀在 while 循环中的差异，以及素数判断程序
 - [2.14-switch 语句](2.14-switch%E8%AF%AD%E5%8F%A5.html) case 1: case 2: 实现分组
 - [2.15-函数](2.15-%E5%87%BD%E6%95%B0.html) 函数返回值，判断是否素数，pow函数实现
-- [2.16- 函数表达式](2.16-%20函数表达式.md)let fuc = function(){}
+- [2.16- 函数表达式](2.16-%20函数表达式.md)   let fuc = function(){}
